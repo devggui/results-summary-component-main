@@ -6,42 +6,86 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="content">
+      <div class="content-left">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+      
+        <h2>Great</h2>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>      
+      </div>
+      <div class="content-right">
+        <h3>Summary</h3>
+        
+        <div class="items" style="background-color: hsla(0, 100%, 67%, 0.1);">
+          <div class="items-left">
+            <i></i>
+            <span style="color: var(--primary-Light-red);">Reaction</span>
+          </div>
+          <div class="items-right">
+            <p>80</p>  
+            <p style="color: rgba(0, 0, 0, 0.3);">/</p> 
+            <p style="color: rgba(0, 0, 0, 0.3);">100</p>
+          </div>
+        </div>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="items" style="background-color: hsla(39, 100%, 56%, 0.1);">
+          <div class="items-left">
+            <i></i>
+            <span style="color: var(--primary-Orangey-yellow);">Memory</span>
+          </div>
+          <div class="items-right">
+            <p>92 </p>
+            <p style="color: rgba(0, 0, 0, 0.3);">/</p>
+            <p style="color: rgba(0, 0, 0, 0.3);">100</p>
+          </div>
+        </div>
+      
+        <div class="items" style="background-color: hsla(166, 100%, 37%, 0.1);">
+          <div class="items-left">
+            <i></i>
+            <span style="color: var(--primary-Green-teal);">Verbal</span>
+          </div>
+          <div class="items-right">
+            <p>61</p>            
+            <p style="color: rgba(0, 0, 0, 0.3);">/</p>
+            <p style="color: rgba(0, 0, 0, 0.3);">100</p>
+          </div>
+        </div>
+      
+        <div class="items" style="background-color: hsla(234, 85%, 45%, 0.1);">
+          <div class="items-left">
+            <i></i>
+            <span style="color: var(--primary-Cobalt-blue);">Visual</span>
+          </div>
+          <div class="items-right">
+            <p>72 </p>
+            <p style="color: rgba(0, 0, 0, 0.3);">/</p>
+            <p style="color: rgba(0, 0, 0, 0.3);">100</p>
+          </div>
+        </div>
+      
+        <button>Continue</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Guilherme Silva (devggui)</a>.
+    </div>
+  </div>  
 </body>
 </html>
